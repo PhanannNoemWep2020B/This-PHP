@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="process.php"> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="raw">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="card">
+                    <h2 class="card-header">
+                        Personal Information
+                    </h2>
+                    <div class="card-body">
+                        <form action="body.php" method="POST">
+                            <div class="form-grounp">
+                                <label for="fname">Username:</label>
+                                <input type="text" name="username" id="fname" class="form-control"/>
+                            </div>
+                            <div class="form-grounp">
+                                <label for="pwd">Password:</label>
+                                <input type="password" name="password" id="pwd" class="form-control">
+                            </div>
+                            <div class="form-group"></div>
+                                <label for="gender">Gender:</label>
+                                <input type="radio" name="gender" id="gender" value="boy">Male
+                                <input type="radio" name="gender" id="gender" value="gril">Femmala
+                            <div class="form-grounp">
+                                <label for="status">Status:</label>
+                                <select name="status">
+                                    <option value="Singla">Single</option>
+                                    <option value="Mariage">Mariage</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">Interest</label>
+                                <input type="checkbox" name="interest[]" value="Dancing" id="interest"/>Dancing
+                                <input type="checkbox" name="interest[]" value="Reading" id="interest"/>Reading
+                                <input type="checkbox" name="interest[]" value="Watch Movie"  id="interest"/>Watch Movie
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="send" value="submit" class="btn btn-succes"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
